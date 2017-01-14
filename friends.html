@@ -18,9 +18,9 @@
 
       <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
           for="demo-menu-lower-left">
-        <li class="mdl-menu__item" onclick="location.href=events.html">Eventos</li>
-        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onclick="location.href=services.html">Serviços</li>
-        <li class="mdl-menu__item" onclick="location.href=friends.html">Amigos</li>
+        <li class="mdl-menu__item" onclick="location.href='events.html'">Eventos</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onclick="location.href='services.html'">Serviços</li>
+        <li class="mdl-menu__item" onclick="location.href='friends.html'">Amigos</li>
       </ul>
       <h6>Amigos</h6>
     </header>
@@ -28,12 +28,21 @@
     <main>
 
       <article>
-        <form class="base-form" action="#" onsubmit="return false;">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="filtro">
-            <label class="mdl-textfield__label" for="filtro">Filtrar</label>
-          </div>
-        </form>
+
+        <div style="position: relative; padding-left: 40px;">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-button--primary"
+                  style="position: absolute; left: 15px; top: 15px;"
+                  onclick="location.href='add_friends.html'">
+            <i class="material-icons">add</i>
+          </button>
+
+          <form class="base-form" action="#" onsubmit="return false;">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="filtro">
+              <label class="mdl-textfield__label" for="filtro">Filtrar</label>
+            </div>
+          </form>
+        </div>
 
         <div class="demo-list-action mdl-list">
           <div class="mdl-list__item">
@@ -114,7 +123,7 @@
           <h5 class="mdl-dialog__title">Deixar de seguir?</h5>
           <div class="mdl-dialog__content">
             <p>
-              Você gostaria de deixar de seguir Bryan Craston?
+              Você gostaria de deixar de seguir <b>Bryan Craston</b>?
             </p>
           </div>
           <div class="mdl-dialog__actions">

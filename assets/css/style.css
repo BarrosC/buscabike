@@ -68,6 +68,7 @@ header {
   font-size: 22px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 header h6 {
@@ -97,13 +98,23 @@ main:not(.login-screen)  {
 }
 
 .base-form button {
-  width: 300px;
+  max-width: 320px;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.base-form input {
+  max-width: 320px;
+  width: 100%;
 }
 
 .signup-button {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.mdl-dialog__title {
+  font-size: 25px;
 }

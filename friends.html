@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Bike</title>
+    <link rel="stylesheet" href="/assets/css/vendor/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <button id="demo-menu-lower-left"
+          class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+          for="demo-menu-lower-left">
+        <li class="mdl-menu__item" onclick="location.href=events.html">Eventos</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onclick="location.href=services.html">Serviços</li>
+        <li class="mdl-menu__item" onclick="location.href=friends.html">Amigos</li>
+      </ul>
+      <h6>Amigos</h6>
+    </header>
+
+    <main>
+
+      <article>
+        <form class="base-form" action="#" onsubmit="return false;">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="filtro">
+            <label class="mdl-textfield__label" for="filtro">Filtrar</label>
+          </div>
+        </form>
+
+        <div class="demo-list-action mdl-list">
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Bryan Cranston</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Aaron Paul</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Bob Odenkirk</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Corrie Quintana</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Bertram Bank</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Russel Bigger</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Therese Biggins</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-avatar">person</i>
+              <span>Kassandra Holford</span>
+            </span>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored show-dialog">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+        </div>
+
+        <dialog class="mdl-dialog">
+          <h5 class="mdl-dialog__title">Deixar de seguir?</h5>
+          <div class="mdl-dialog__content">
+            <p>
+              Você gostaria de deixar de seguir Bryan Craston?
+            </p>
+          </div>
+          <div class="mdl-dialog__actions">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--primary close">
+              <i class="material-icons">check</i>
+            </button>
+
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored close">
+              <i class="material-icons">clear</i>
+            </button>
+          </div>
+        </dialog>
+
+      </article>
+
+    </main>
+
+    <script src="/assets/js/vendor/material.min.js"></script>
+
+    <script>
+      var dialog = document.querySelector('dialog');
+      var showDialogButton = document.querySelector('.show-dialog');
+      if (! dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+      }
+      showDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+      });
+      dialog.querySelector('.close').addEventListener('click', function() {
+        dialog.close();
+      });
+    </script>
+  </body>
+</html>

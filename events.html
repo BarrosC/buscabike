@@ -10,46 +10,61 @@
   </head>
   <body>
 
-    <section>
+    <header>
+      <button id="demo-menu-lower-left"
+          class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+          for="demo-menu-lower-left">
+        <li class="mdl-menu__item" onclick="location.href=events.html">Eventos</li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" onclick="location.href=services.html">Serviços</li>
+        <li class="mdl-menu__item" onclick="location.href=friends.html">Amigos</li>
+      </ul>
+      <h6>Eventos</h6>
+    </header>
+
+    <main>
 
       <article>
           <form class="base-form" action="#" onsubmit="return false;">
-			
+
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<select>
-				  <option value="data">Data</option>
-				  <option value="distancia">Distância</option>
-				</select>
+      				<select>
+      				  <option value="data">Data</option>
+      				  <option value="distancia">Distância</option>
+      				</select>
               <label class="mdl-textfield__label" for="nome">Ordernar</label>
             </div>
-            
-            
-<table class="mdl-data-table mdl-js-data-table">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">Evento</th>
-      <th>Data/Horário</th>
-      <th>Distância</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Unidos no Pedal</td>
-      <td>14/01/2017 15:30</td>
-      <td>3,5 km</td>
-    </tr>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric">Pedaleiros</td>
-      <td>15/01/2017 08:00</td>
-      <td>10 km</td>
-    </tr>
-  </tbody>
-</table>
-			
+
+
+            <table class="mdl-data-table mdl-js-data-table">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Evento</th>
+                  <th>Data/Horário</th>
+                  <th>Distância</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Unidos no Pedal</td>
+                  <td>14/01/2017 15:30</td>
+                  <td>3,5 km</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Pedaleiros</td>
+                  <td>15/01/2017 08:00</td>
+                  <td>10 km</td>
+                </tr>
+              </tbody>
+            </table>
+
           </form>
       </article>
 
-    </section>
+    </main>
 
     <script src="/assets/js/vendor/material.min.js"></script>
   </body>

@@ -60,7 +60,25 @@ body {
   background-color: #EFE0B9;
 }
 
-section {
+header {
+  background: #3F51B5;
+  color: white;
+  width: 100%;
+  padding: 16px;
+  font-size: 22px;
+  position: fixed;
+  top: 0;
+}
+
+header h6 {
+  display: inline-block;
+}
+
+main:not(.login-screen)  {
+  padding-top: 74px;
+}
+
+.login-screen {
   padding-top: 10px;
 }
 
@@ -70,12 +88,8 @@ section {
 }
 
 .login-screen .logo img {
-  width: 80%;
+  width: 60%;
   max-width: 320px;
-}
-
-input {
-  background-color: white;
 }
 
 .base-form {
@@ -84,7 +98,8 @@ input {
 
 .base-form button {
   width: 300px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .signup-button {

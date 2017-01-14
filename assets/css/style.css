@@ -60,7 +60,26 @@ body {
   background-color: #EFE0B9;
 }
 
-section {
+header {
+  background: #3F51B5;
+  color: white;
+  width: 100%;
+  padding: 16px;
+  font-size: 22px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+header h6 {
+  display: inline-block;
+}
+
+main:not(.login-screen)  {
+  padding-top: 74px;
+}
+
+.login-screen {
   padding-top: 10px;
 }
 
@@ -70,12 +89,8 @@ section {
 }
 
 .login-screen .logo img {
-  width: 80%;
+  width: 60%;
   max-width: 320px;
-}
-
-input {
-  background-color: white;
 }
 
 .base-form {
@@ -83,12 +98,23 @@ input {
 }
 
 .base-form button {
-  width: 300px;
-  margin-top: 20px;
+  max-width: 320px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.base-form input {
+  max-width: 320px;
+  width: 100%;
 }
 
 .signup-button {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.mdl-dialog__title {
+  font-size: 25px;
 }

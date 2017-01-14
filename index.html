@@ -10,10 +10,7 @@
   </head>
   <body>
 
-    <section class="login-screen">
-      <button class="signup-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="location.href='signup.html';">
-        <i class="material-icons">person_add</i>
-      </button>
+    <main class="login-screen">
 
       <figure class="logo">
         <img src="/assets/images/logo.png" alt="">
@@ -29,13 +26,20 @@
               <input class="mdl-textfield__input" type="text" id="senha">
               <label class="mdl-textfield__label" for="senha">Senha</label>
             </div>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='events.html';">
+            
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="location.href='events.html';">
               Entrar
+            </button>
+
+            <p>precisa de uma conta?</p>
+
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onclick="location.href='signup.html';">
+              Cadastre-se
             </button>
           </form>
       </article>
 
-    </section>
+    </main>
 
     <script src="/assets/js/vendor/material.min.js"></script>
   </body>
